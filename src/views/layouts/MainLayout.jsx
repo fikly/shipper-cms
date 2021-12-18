@@ -16,10 +16,14 @@ const MainLayout = ({Container, title}) => {
             <Suspense fallback={
                 <Loading />
             }>
-                <Sidebar />
-                <div className="main-layout">
-                    <Navbar />
-                    <Container />
+                <div className="main-container">
+                    <Sidebar />
+                    <div className="main-layout">
+                        <Navbar />
+                        <div className="main-content">
+                            <Container />
+                        </div>
+                    </div>
                 </div>
             </Suspense>
         </Fragment>
