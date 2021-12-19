@@ -29,6 +29,7 @@
     @media(max-width: $resolution-mobile){
         display: block;
         width: calc(100% - 48px);
+        margin: 0px auto;
         margin-bottom: 24px;
         &:last-child{
             margin-bottom: 0px;
