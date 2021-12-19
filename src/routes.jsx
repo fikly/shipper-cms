@@ -1,9 +1,9 @@
 import {lazy} from 'react';
 
-const Homepage = lazy( () => import('~/views/containers/home/Home') );
+const DriverManagement = lazy( () => import('~/views/containers/driverManagement/DriverManagement') );
 
 const routes = [
-    {title: 'Homepage', container: Homepage, exact: true, path: '/'},
+    {title: 'Driver Management', container: DriverManagement, exact: true, path: '/'},
 ];
 
 export default routes;

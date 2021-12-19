@@ -1,6 +1,7 @@
 $defaultPrimary : #ff4646;
 $defaultWhite : #ffffff;
 $defaultBlack : #333333;
+$defaultGrey : #aaaaaa;
 $defaultBackground : #fafafa;
 
 
@@ -9,6 +10,7 @@ $defaultBackground : #fafafa;
     --primary-text-color : #{$defaultPrimary};
     --white-text-color: #{$defaultWhite};
     --black-text-color: #{$defaultBlack};
+    --grey-text-color: #{$defaultGrey};
     //end color text
 
     //background color

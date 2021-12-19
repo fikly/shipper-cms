@@ -1,0 +1,54 @@
+@import '../../../assets/scss/const';
+
+.driver-item{
+    width: 300px;
+    background-color: var(--white-background-color);
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0px 24px;
+    .item-header{
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--default-background-color);
+        border-radius: 8px 8px 0px 0px;
+    }
+    .item-body{
+        padding: 16px;
+        .avatar{
+            height: 64px;
+            width: 64px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        .item-label{
+            margin-top: 16px;
+        }
+    }
+    @media(max-width: $resolution-mobile){
+        display: block;
+        width: calc(100% - 48px);
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        .item-body{
+            display: flex;
+            align-items: center;
+            .avatar{
+                height: 72px;
+                width: 72px;
+                margin-right: 16px;
+            }
+        }
+    }
+    &:hover{
+        .item-header{
+            background-color: var(--primary-text-color);
+            h5, span, svg{
+                color: var(--white-text-color) !important;
+            }
+        }
+    }
+}

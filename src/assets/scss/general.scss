@@ -17,8 +17,17 @@ a{color: inherit;text-decoration: inherit;}
 .objectFit-contain{object-fit: contain;}
 .objectFit-cover{object-fit: cover;}
 .d-flex{display: flex;}
+.flex-column{flex-direction: column;}
 .justify-content-center{justify-content: center;}
 .align-items-center{align-items: center;}
+
+.horizontal-list{
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    padding-bottom: 16px;
+}
 
 .overlay{ 
     z-index: 2;
@@ -28,4 +37,10 @@ a{color: inherit;text-decoration: inherit;}
     width: 100vw;
     height: 100vh;
     background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.alert{
+    background-color: var(--white-background-color);
+    padding: 16px;
+    border-radius: 8px;
 }
