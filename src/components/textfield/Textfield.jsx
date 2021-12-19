@@ -5,7 +5,7 @@ const Textfield = ({icon, ...props}) => {
     return (
         <div className={`textfield ${icon ? 'has-icon' : ''}`}>
             {icon}
-            <input type="text" {...props} />
+            <input data-testid="textfield" type="text" {...props} />
         </div>
     );
 };
