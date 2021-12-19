@@ -14,7 +14,7 @@ const DriverItem = ({user}) => {
             <div className="item-body">
                 <img src={user.picture.thumbnail} alt={user.name.first} className="avatar" onError={addDefaultUserSrc} />
                 <div>
-                    <DriverItemLabel label="Nama Driver" value={`${user.name.first},${user.name.last}`} />
+                    <DriverItemLabel label="Nama Driver" value={`${user.name.first}, ${user.name.last}`} />
                     <DriverItemLabel label="Telepon" value={user.phone} />
                     <DriverItemLabel label="Email" value={user.email} />
                     <DriverItemLabel label="Tanggal Lahir" value={dayjs(new Date(user.dob.date)).format('DD-MM-YYYY')} />

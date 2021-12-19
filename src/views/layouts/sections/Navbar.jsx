@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <div className="mobile-menu">
-                <AiOutlineMenu className="font-24 mr-16p" onClick={() => openModal()} />
+                <AiOutlineMenu className="font-24 mr-16p" onClick={openModal} />
                 <img src={logoIcon} alt={logoIconAlt} className="menu-logo" />
             </div>
             <h5 className="username font-12 font-600 mr-8p">Hello, <span className="color-primary">Shipper User</span></h5>

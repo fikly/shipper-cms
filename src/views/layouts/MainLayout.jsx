@@ -1,5 +1,6 @@
 import React, {Fragment, Suspense} from 'react';
 import {Helmet} from 'react-helmet';
+import Notifications from 'react-notify-toast';
 import Loading from '~/components/loading/Loading';
 
 import Navbar from './sections/Navbar';
@@ -17,6 +18,7 @@ const MainLayout = ({Container, title}) => {
                 <Loading />
             }>
                 <div className="main-container">
+                    <Notifications />
                     <Sidebar />
                     <div className="main-layout">
                         <Navbar />

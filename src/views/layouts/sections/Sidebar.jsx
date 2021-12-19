@@ -16,7 +16,7 @@ const Sidebar = () => {
     return (
         <Fragment>
             {showMenu &&
-            <div className="overlay" onClick={() => closeModal()} />}
+            <div className="overlay" onClick={closeModal} />}
             <div className={`sidebar-container ${showMenu ? 'show' : ''}`}>
                 <div className="logo mb-16p">
                     <img src={logoIcon} alt={logoIconAlt} />

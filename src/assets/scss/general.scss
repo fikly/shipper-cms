@@ -44,3 +44,13 @@ a{color: inherit;text-decoration: inherit;}
     padding: 16px;
     border-radius: 8px;
 }
+
+// Toast
+.toast-notification{
+    width: 96% !important;
+    text-align: right !important;
+    top: 30px !important;
+    span{
+        border-radius: 5px !important;
+    }
+}

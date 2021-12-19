@@ -24,10 +24,10 @@ const Pagination = ({total, limit, current}) => {
     return (
         <div className="d-flex flex-column align-items-center mt-24p mb-24p">
             <div className="pagintaion">
-                <h5 onClick={() => handlePreviousPage()} className={(current === 1 ? 'color-grey' : 'cursor-pointer')}>
+                <h5 onClick={handlePreviousPage} className={(current === 1 ? 'color-grey' : 'cursor-pointer')}>
                     <AiOutlineLeft className="mr-4p" /> Previous Page
                 </h5>
-                <h5 onClick={() => handleNextPage()} className={(current === totalPage ? 'color-grey' : 'cursor-pointer')}>
+                <h5 onClick={handleNextPage} className={(current === totalPage ? 'color-grey' : 'cursor-pointer')}>
                     Next Page <AiOutlineRight className="ml-4p" />
                 </h5>
             </div>
